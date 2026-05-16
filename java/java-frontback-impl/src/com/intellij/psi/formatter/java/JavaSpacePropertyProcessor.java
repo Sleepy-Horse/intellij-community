@@ -243,7 +243,12 @@ public final class JavaSpacePropertyProcessor extends JavaElementVisitor {
       return PsiTreeUtil.getParentOfType(parent, PsiDocMethodOrFieldRef.class) != null;
     }
 
-    return JavaDocElementType.DOC_COMMENT_TOKENS.contains(type) || type == JavaDocElementType.DOC_TAG || type == JavaDocElementType.DOC_INLINE_TAG;
+    return JavaDocElementType.DOC_COMMENT_TOKENS.contains(type)
+           || type == JavaDocElementType.DOC_TAG
+           || type == JavaDocElementType.DOC_INLINE_TAG
+           || type == JavaDocElementType.DOC_SNIPPET_TAG
+           || type == JavaDocElementType.DOC_SNIPPET_TAG_VALUE
+           || type == JavaDocElementType.DOC_SNIPPET_BODY;
   }
 
   private void init(ASTNode child) {
