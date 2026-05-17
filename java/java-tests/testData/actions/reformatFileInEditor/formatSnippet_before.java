@@ -1,5 +1,5 @@
 /**
- * {@snippet :
+ * {@snippet    class="TestClass" :
  *}
  * {@snippet : {
  * }}
