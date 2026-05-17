@@ -131,6 +131,10 @@ public class ReformatCodeActionInEditorTest extends BasePlatformTestCase {
     doTest(new ReformatCodeRunOptions(SELECTED_TEXT));
   }
 
+  public void testFormatSnippet() {
+    doTest(new ReformatCodeRunOptions(WHOLE_FILE));
+  }
+
   // Excluded because of IDEA-229587
   public void _testWrapParamList() {
     CodeStyleSettings temp = CodeStyle.createTestSettings();

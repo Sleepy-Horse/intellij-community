@@ -1,0 +1,6 @@
+/**
+ * {@snippet    class="TestClass" :
+ *}
+ * {@snippet : {
+ * }}
+ */
